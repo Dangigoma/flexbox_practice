@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Flex Box Learning</title>
+        <style>
+            .flexbox {
+                display: flex;
+                background-color: rgb(209, 178, 238);
+                height: 80vh;
+             }
+            .box {
+                background-color: rgb(186, 238, 238);
+                border: 2px solid brown;
+                height: 100px;
+                width: 100px;
+                font-size: 5rem;
+                margin: 10px;
+            }
+            /*
+            #box1{
+                flex-basis: 200px;
+            }
+            #box2{
+                flex-basis: 500px;
+            }
+            #box3{
+                flex-basis: 300;
+            }*/
+            #box1{
+                flex-grow: 1;
+                align-items: center;
+            }
+            #box2{
+                flex-grow: 2;
+            }
+            #box3{
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flexbox">
+            <!-- if we type div.box#box$*3  then we will get three div, class and I d together-->
+        <!--press ctrl + z then you can go back to the content-->
+            <div class="box" id="box1">1</div>
+            <div class="box" id="box2">2</div>
+            <div class="box" id="box3">3</div>
+
+        </div>
+    </body>
+</html>
